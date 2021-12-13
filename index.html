@@ -9,22 +9,22 @@
 </head>
 <body>
     <div class="site-wrap">
-        <header>
-            <input type="text" class="search-bar" placeholder="City">
-        </header>
-        <main>
-            <section class="location">
-                <div class="city">San Antonio, TX</div>
-                <div class="date">December 12 2021</div>
-            </section>
-                <div class="current">
-                    <div class="temperature">48<span>°</span></div>
-                    <div class="weather">Clear</div>
-                    <div class="hi-low">42°F-67°F</div>
-                </div>
-                
-        </main>
+        <section class="top-banner">
+            <div class="container">
+              <h1 class="heading">Weather Dashboard</h1>
+              <form>
+                <input type="text" placeholder="Search for a city" autofocus>
+                <button type="submit">SUBMIT</button>
+                <span class="msg"></span>
+              </form>
+            </div>
+          </section>
+          <section class="weather-display">
+            <div class="container">
+              <ul class="cities"></ul>
+            </div>
+        </section>
     </div>
-    <script src="script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
