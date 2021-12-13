@@ -4,59 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--added bootsrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!--link to CSS-->
-
     <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/style.css">    
 </head>
 <body>
-
-    <div class="container">
-        <!-- jumbotron -->
-        <div class="jumbotron-fluid bg-dark text-white text-center">
-            <div class="container">
-                <h1 class="display-4">Weather Dashboard</h1>
-            </div>
-        </div>
-        <!--row 1-->
-        <div class="row">
-            <!--col 1 in row 1-->
-            <div class="col-3 m-2 bg-light">
-                <h3>City</h3>
-                <div class="input-group mb-2">
-                    <input type="text" class="form-control" id="city-input" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                        <button id="add-city" class="btn btn-outline-secondary bg-primary" type="button"><ion-icon name="search-outline"></ion-icon> </button>
-                    </div>
+    <div class="site-wrap">
+        <header>
+            <input type="text" class="search-bar" placeholder="City">
+        </header>
+        <main>
+            <section class="location">
+                <div class="city">San Antonio, TX</div>
+                <div class="date">December 12 2021</div>
+            </section>
+                <div class="current">
+                    <div class="temperature">48<span>°</span></div>
+                    <div class="weather">Clear</div>
+                    <div class="hi-low">42°F-67°F</div>
                 </div>
-                <!-- history cities box -->
-                <div class="card" style="width: 15rem;">
-                    <ul id="city-list" class="list-group list-group-flush">
-                    </ul>
-                </div>
-            </div>
-            <!-- col 2 row 1 -->
-            <div class="col-8 m-2">
-                <!--row 1 col 2 -->
-                <div class="row-12">
-                    <div class="card">
-                        <div id="today-weather" class="card-body">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row-12">
-                <h3>5-Day Forecast:</h3>
-            </div>
-            <br>
-            <div id="boxes" class="row">
-            </div>
-        </div>
+                
+        </main>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
